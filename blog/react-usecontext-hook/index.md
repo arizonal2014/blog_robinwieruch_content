@@ -221,7 +221,7 @@ const Book = ({ item }) => {
 };
 ```
 
-Second, we will use the dictionary to render the buttons, which change the context's value, in a more sophisticated way. Changes like these help in the long run, because now you can add more currencies in the dictionrary and our rendering engine will make sure to display all of them:
+Second, we will use the dictionary to render the buttons, which change the context's value, in a more sophisticated way. Changes like these help in the long run, because now you can add more currencies in the dictionary and our rendering engine will make sure to display all of them:
 
 ```javascript{17-25}
 const CURRENCIES = {
@@ -450,7 +450,7 @@ From here on, no one can tamper with the Context object (here `CurrencyContext`)
 
 At the moment, the whole currency functionailty is scattered across the place. Let's see how we can encapsulate this feature more into React's Context by moving things in there and providing an API to the outside.
 
-As prerequisite, we move the dictionrary into the context file:
+As prerequisite, we move the dictionary into the context file:
 
 ```javascript{3-14,18}
 import React from 'react';
